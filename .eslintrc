@@ -4,17 +4,9 @@
   "plugins": [
     "@typescript-eslint"
   ],
-  "extends": [
-    "plugin:@shopify/esnext",
-    "plugin:@shopify/typescript",
-    "plugin:@shopify/react",
-    "plugin:@shopify/prettier",
-    "plugin:@shopify/typescript-type-checking"
-  ],
+  "extends": "eslint:recommended",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "rules": {
-    "no-console": 2 // Remember, this means error!
-  }
+  "rules": {}
 }
