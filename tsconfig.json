@@ -13,7 +13,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -23,6 +23,7 @@
   "include": [
     "src",
     "App.tsx",
-    "index.tsx"
+    "index.tsx",
+    ".d.ts"
   ]
 }

@@ -4,7 +4,10 @@
   "plugins": [
     "@typescript-eslint"
   ],
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:mdx/recommended"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
