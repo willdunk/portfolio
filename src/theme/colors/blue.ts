@@ -1,9 +1,14 @@
-export const blue = {
-  main: "#334364",
-  contrastText: "#FFFFFF",
+const blue = {
+  900: '#1E2838',
+  800: '#273346',
+  700: '#3A4B61',
+  600: '#4D5D7C',
+  500: '#334364',
+  400: '#6782A8',
+  300: '#7592BA',
+  200: '#84A3CB',
+  100: '#93B4DC',
+  50: '#A3C5ED',
 };
 
-export const lightblue = {
-  main: "#447ee3",
-  contrastText: "#000000",
-};
+export default blue;

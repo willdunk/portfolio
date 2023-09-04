@@ -1,18 +1,19 @@
-import { createTheme } from "@material-ui/core/styles";
+import { extendTheme } from "@chakra-ui/react"
+import colors from "./colors"
 
-import { blue, lightblue } from "./colors/blue";
-
-export const theme = createTheme({
-  palette: {
-    primary: blue,
-    secondary: lightblue,
+const theme = extendTheme({
+  colors: {
+    ...colors
+  },
+  layerStyles: {
     background: {
-      default: blue.main,
+      bg: 'blue.800'
     },
-  },
-  typography: {
-    fontFamily: ['"Dosis"', "sans-serif"].join(","),
-  },
-});
+    base: {
+      bg: "blue.600",
+      color: 'greyscale.50',
+    },
+  }
+})
 
 export default theme;

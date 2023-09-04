@@ -1,16 +1,14 @@
 import React from "react";
-import { ThemeProvider, CssBaseline } from "@material-ui/core";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import theme from "./theme";
 import { routes } from "./utils";
+import { ChakraProvider } from "@chakra-ui/react";
+import theme from "./theme";
 
 const App = () => {
   console.log(process.env.HASH);
   return (
     <div className="App">
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
+      <ChakraProvider theme={theme}>
         <Router>
           <Routes>
             {routes.map((route, key) => (
@@ -18,7 +16,7 @@ const App = () => {
             ))}
           </Routes>
         </Router>
-      </ThemeProvider>
+      </ChakraProvider>
     </div>
   );
 };
