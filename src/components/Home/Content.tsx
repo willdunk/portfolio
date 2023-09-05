@@ -1,7 +1,8 @@
 import { Avatar, Center, Container as ChakraContainer, Spacer } from '@chakra-ui/react';
 import React from 'react';
-import Bio from '../../assets/content/Main/Bio.mdx';
+import Bio from '../../assets/content/main/bio.mdx';
 import profileImage from '../../assets/images/profile.jpg';
+import Links from './Links';
 
 const Content: React.FC<{}> = () => {
   return (
@@ -10,6 +11,9 @@ const Content: React.FC<{}> = () => {
         <Avatar size='2xl' name='Will Dunkerley' src={profileImage} />
       </Center>
       <Bio />
+      <Center mt={2}>
+        <Links />
+      </Center>
     </ChakraContainer>
   );
 }
