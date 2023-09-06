@@ -12,10 +12,10 @@ const Links: React.FC<{}> = () => {
   ];
   return (
     <HStack>
-      {links.map(({ link, logo }) => {
+      {links.map(({ link, logo, alt }) => {
         return (
-          <Link href={link} isExternal>
-            <span title="Close">
+          <Link key={alt} href={link} isExternal>
+            <span title={alt}>
               <Icon as={logo} boxSize={10} />
             </span>
           </Link>

@@ -13,6 +13,10 @@ const theme = extendTheme({
       bg: "blue.600",
       color: 'greyscale.50',
     },
+    content: {
+      bg: "greyscale.50",
+      color: 'greyscale.900'
+    }
   }
 })
 
