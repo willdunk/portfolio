@@ -1,9 +1,8 @@
 import { Avatar, Center, Container as ChakraContainer } from '@chakra-ui/react';
 import React from 'react';
-import Bio from '../../assets/content/main/bio.mdx';
-import profileImage from '../../assets/images/profile.jpg';
+import Bio from '../../assets/content/Main/Bio.mdx';
+import profileImage from 'url:../../assets/images/profile.jpg';
 import Links from './Links';
-import { Link } from "react-router-dom";
 
 const Content: React.FC<{}> = () => {
   return (
