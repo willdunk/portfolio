@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "cross-env PORT=3000 parcel index.html",
-    "build": "parcel build index.html",
+    "build": "rm -rf dist && parcel build index.html",
     "lint": "eslint . --ext .ts,.tsx,.mdx",
     "lint-and-fix": "eslint . --ext .ts,.tsx,.mdx --fix"
   },
@@ -30,7 +30,8 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "not and_uc > 0"
     ],
     "development": [
       "last 1 chrome version",
