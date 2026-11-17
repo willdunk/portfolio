@@ -3,31 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@chakra-ui/react": "^2.8.0",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mdx-js/loader": "^2.3.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.46",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "axios": "^1.7.9",
+    "@chakra-ui/react": "~2.8.2",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@types/node": "^16.18.126",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "axios": "^1.21.1",
     "chakra-ui-markdown-renderer": "^4.1.0",
-    "dotenv": "^16.3.1",
-    "framer-motion": "^10.16.2",
-    "lodash": "^4.17.21",
-    "mdx": "^0.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1",
+    "framer-motion": "^10.18.0",
+    "lodash": "^4.18.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^4.12.0",
     "react-markdown": "^8.0.7",
-    "react-router": "latest",
-    "react-router-dom": "latest",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "react-router-dom": "^7.18.5",
+    "typescript": "^4.9.5"
   },
   "scripts": {
     "start": "cross-env PORT=3000 parcel index.html",
@@ -49,18 +40,17 @@
   },
   "devDependencies": {
     "@mdx-js/react": "^1.6.22",
-    "@parcel/transformer-image": "^2.9.3",
-    "@parcel/transformer-mdx": "2.8.0",
+    "@parcel/transformer-image": "^2.16.4",
+    "@parcel/transformer-mdx": "^2.13.3",
     "@shopify/eslint-plugin": "^43.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.6.0",
-    "@typescript-eslint/parser": "^6.6.0",
-    "buffer": "^5.5.0",
-    "cross-env": "^7.0.3",
-    "eslint": "^8.48.0",
-    "eslint-plugin-mdx": "^2.2.0",
-    "onchange": "^7.1.0",
-    "parcel": "2.8.0",
-    "prettier": "^3.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "buffer": "^6.0.3",
+    "cross-env": "^10.1.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-mdx": "^2.3.4",
+    "parcel": "^2.16.4",
+    "prettier": "^3.10.1",
     "process": "^0.11.10"
   },
   "parcel": {
@@ -72,5 +62,16 @@
         "parcel-transformer-image"
       ]
     }
+  },
+  "resolutions": {
+    "**/@typescript-eslint/typescript-estree/minimatch": "^11.0.1",
+    "**/@npmcli/map-workspaces/minimatch": "^11.0.1",
+    "**/@mdx-js/mdx/@babel/core": "^7.29.6",
+    "**/remark-mdx/@babel/core": "^7.29.6",
+    "**/remark-parse/trim": "^0.0.3",
+    "**/@npmcli/map-workspaces/glob": "^14.0.6"
+  },
+  "@parcel/resolver-default": {
+    "packageExports": true
   }
 }
